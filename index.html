@@ -1,3 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barreda & Asociados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+
+    <header class="header">
+        <div class="section-header1">
+            <img src="logogo.jpg" alt="Logo Barreda y Asociados" class="logoba">
+            <img src="golo.jpg" alt="Logo" class="logotext"> 
+        </div>
+        <div class="section-header2">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicanos</a></li>
+        </div>
+
+
+        <!-- Menu despl -->
+        <div class="menu-desp">
+            <!-- Botón de las tres barras (hamburguesa) -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Menú desplegable -->
+    <div class="menu" id="menu">
+        <button class="close-btn" onclick="toggleMenu()">X</button>
+        <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicanos</a></li>
+        </ul>
+    </div>
+        </div>
+    </header>
+    <!-- Inicio Main -->
+    <main class="main">
+        <section class="present">
+            <h1>Barreda & Asociados</h1>
+            <div class="p-present">
+            <p class="textdescrip-present">Barreda & Asociados está integrada por <b>profesionales calificados</b> en las diferentes materias del derecho.
+                <br>Destacamos como una firma de abogados que se preocupa por tener clientes satisfechos.</p>
+            </div>
+                <div class="contactus-present">Contáctanos</div>
+        </section>
+        
+        <section class="clientes-home">
+            <h2>Han Confiado en Nosotros</h2>
+        <div class="general-clientes">
+            <div class="boxes-clientes-home"></div>
+            <div class="boxes-clientes-home"></div>
+            <div class="boxes-clientes-home"></div>
+            <div class="boxes-clientes-home"></div>
+        </div>
+
+        </section>
+    </main>
+    <foooter class="footer">
+        <div class="div-footer">
+            <img class="logo-footer" src="logocompleto.jpg" alt="Logo Barreda y Asociados">
+        </div>
+        <div class="div-footer-social">
+            <div class="expand">
+                <h3>Nuestras Redes Sociales</h3>
+                <p>Buscanos como: <b>Barreda & Asociados / Servicios Contables, Tributarios y Asesorías. </b></p>
+            </div>
+            <div class="redes-social">
+                <a href="https://wa.link/8ugabf"><img src="whatsapp.svg" alt="WhatsApp Logo" class="logo-redes"></a>
+                <a href="https://www.facebook.com/jbarredareyes"><img src="facebook.svg" alt="Facebook Logo" class="logo-redes"></a>
+                <a href="mailto:jnathalie2490@gmail.com"><img src="gmail.svg" alt="Gmail Logo" class="logo-redes"></a>
+            </div>
+        </div>
+    </foooter>
+</body>
+<script>
+    // Función para abrir y cerrar el menú
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('open');
+    }
+</script>
+</html>
+=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
