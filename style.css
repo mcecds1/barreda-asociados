@@ -191,6 +191,7 @@ h1 {
     .p-present {
         width: 80%;
         justify-content: center;
+        margin: 0 10%
     }
     
 }
