@@ -173,6 +173,7 @@ h1 {
 
 }
 .contactus-present {
+    width: fit-content;
     padding: 20px 40px;
     border: none;
     background-color: #698136;
