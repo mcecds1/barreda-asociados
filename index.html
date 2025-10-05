@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barreda & Asociados</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
-</head>
+    <title>BA Corporation</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+
+
+    <link rel="icon" type="image/png" href="assets/IconBlanco.png">
+</head>
+<body>
     <header class="header">
         <div class="section-header1">
-            <img src="logogo.jpg" alt="Logo Barreda y Asociados" class="logoba">
-            <img src="golo.jpg" alt="Logo" class="logotext"> 
+            <img src="assets/logo-ba.png" alt="Logo Barreda y Asociados" class="logoba">
+        
         </div>
         <div class="section-header2">
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Ubicanos</a></li>
+            <li><a href="../">Inicio</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/ubicaciones">Ubicaciones</a></li>
+            <a href="#" class="btn-1">Agendar Consulta</a>
         </div>
 
 
@@ -31,25 +37,44 @@
     <div class="menu" id="menu">
         <button class="close-btn" onclick="toggleMenu()">X</button>
         <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Ubicanos</a></li>
+            <li><a href="../">Inicio</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/ubicaciones">Ubicaciones</a></li>
         </ul>
     </div>
         </div>
     </header>
     <!-- Inicio Main -->
     <main class="main">
-        <section class="present">
-            <h1>Barreda & Asociados</h1>
-            <div class="p-present">
-            <p class="textdescrip-present">Barreda & Asociados está integrada por <b>profesionales calificados</b> en las diferentes materias del derecho.
-                <br>Destacamos como una firma de abogados que se preocupa por tener clientes satisfechos.</p>
+        <section class="present" data-aos="fade-up">
+           
+            <video src="assets/video-main.mp4" autoplay loop muted playsinline class="video-present"></video>
+            <div class="texts-present">
+                <h2 class="video-text-present">Confianza y excelencia en contabilidad y asesoría financiera</h2>
+                <p class="video-text-present-p">Impulsamos tu negocio con soluciones financieras personalizadas.</p>
+                <a href="" class="btn-2">Contacta a un asesor</a>
             </div>
-                <div class="contactus-present">Contáctanos</div>
         </section>
         
-        <section class="clientes-home">
+        <section class="servicios-home" data-aos="fade-up">
+            <h2>Nuestros Servicios</h2>
+            <div class="boxes-servicios-home">
+                <div class="servicios-box-home">
+                    <h3>Servicios Contables</h3>
+                    <img src="assets/conta.png" class="icon-box-servicios-home">
+                </div>
+                <div class="servicios-box-home">
+                    <h3>Auditorias</h3>
+                    <img src="assets/audi.png" class="icon-box-servicios-home">
+                </div>
+                <div class="servicios-box-home">
+                    <h3>Servicios Legales</h3>
+                    <img src="assets/legal.png" class="icon-box-servicios-home">
+                </div>
+            </div>   
+        </section>
+        
+        <section class="clientes-home" data-aos="fade-up">
             <h2>Han Confiado en Nosotros</h2>
         <div class="general-clientes">
             <div class="boxes-clientes-home"></div>
@@ -59,29 +84,92 @@
         </div>
 
         </section>
+
+        <section class="equipo-home" data-aos="fade-up">
+            <h2>Nuestro Equipo</h2>
+        </section>
+
+        <section class="contacto-home" data-aos="fade-up">
+            <div class="form-contacto-home">
+                <h2>Contáctanos</h2>
+                <form action="">
+                    <label for="">Nombres</label>
+                    <input type="text" placeholder="Ingresa tus nombres" required>
+                    <label for="">Apellidos</label>
+                    <input type="text" placeholder="Ingresa tus apellidos" required>
+                    <label for="">Correo Electrónico</label>
+                    <input type="email" placeholder="ejemplo@ejemplo.com">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" placeholder="Deja tu mensaje" required></textarea>
+                    <div class="enviar-home">
+                        <button type="submit">Enviar</button> 
+                    </div>
+                </form>
+            </div>
+        </section>
+        
     </main>
-    <foooter class="footer">
-        <div class="div-footer">
-            <img class="logo-footer" src="logocompleto.jpg" alt="Logo Barreda y Asociados">
-        </div>
-        <div class="div-footer-social">
-            <div class="expand">
-                <h3>Nuestras Redes Sociales</h3>
-                <p>Buscanos como: <b>Barreda & Asociados / Servicios Contables, Tributarios y Asesorías. </b></p>
-            </div>
-            <div class="redes-social">
-                <a href="https://wa.link/8ugabf"><img src="whatsapp.svg" alt="WhatsApp Logo" class="logo-redes"></a>
-                <a href="https://www.facebook.com/jbarredareyes"><img src="facebook.svg" alt="Facebook Logo" class="logo-redes"></a>
-                <a href="mailto:jnathalie2490@gmail.com"><img src="gmail.svg" alt="Gmail Logo" class="logo-redes"></a>
-            </div>
-        </div>
-    </foooter>
+    
+    <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo y descripción -->
+    <div class="footer-section imga">
+      <img src="assets/IconBlanco.png">
+      <p class="footer-description">
+        Brindando soluciones innovadoras y de calidad para tu negocio.
+      </p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div class="footer-section">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-section">
+      <h3>Síguenos</h3>
+      <div class="socials">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Suscripción -->
+    <div class="footer-section">
+      <h3>Suscríbete</h3>
+      <p>Recibe nuestras novedades y promociones.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 BA Corporation. Todos los derechos reservados.</p>
+  </div>
+</footer>
+    <div class="boton-flotante">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=50241830377&text=%C2%A1Hola!%20Quiero%20unirme%20a%20la%20familia%20ISOM%20para%20hacer%20despegar%20mi%20negocio%20en%20el%20mundo%20d%C3%ADgital%20%F0%9F%9A%80."><img src="assets/whatsapp.png" alt=""></a>
+    </div>
 </body>
-<script>
-    // Función para abrir y cerrar el menú
-    function toggleMenu() {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('open');
-    }
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="scripts/scripts.js"></script>
+
+
+
+
+
+
 </html>
